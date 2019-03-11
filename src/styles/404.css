@@ -1,0 +1,21 @@
+.not-found {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+  .not-found h1 {
+    font-size: 22px; }
+  .not-found h3 {
+    margin-top: 5px; }
+  .not-found h3 a {
+    color: #454545; }
+  .not-found span {
+    margin-top: 40px;
+    font-size: 14px; }
+  .not-found span a {
+    font-weight: 600;
+    color: #454545; }
+
+/*# sourceMappingURL=404.css.map */

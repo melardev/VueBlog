@@ -1,0 +1,299 @@
+.bordered-box {
+  border: 1px solid #E6E6E6;
+  background-color: white;
+  border-radius: 1px;
+  margin: 0; }
+
+.input-box {
+  width: 100%;
+  height: 45px;
+  background-color: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  text-indent: 14px;
+  font-size: 14px;
+  margin-bottom: 10px; }
+
+.button {
+  border: 1px solid #E6E6E6;
+  background-color: #3B5998;
+  font-size: 14px;
+  border-radius: 1px;
+  margin: 0;
+  color: white;
+  height: 40px;
+  width: 100%; }
+
+.clear-button {
+  border: 1px solid #E6E6E6;
+  background-color: white;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 1px;
+  margin: 0;
+  height: 40px;
+  color: black;
+  width: 100%; }
+
+.about {
+  padding: 50px 0 45px 0; }
+  .about-introduction {
+    padding-bottom: 150px;
+    border-bottom: 1px solid #E6E6E6; }
+    .about-introduction-profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      border-bottom: 1px solid #F8F8F8; }
+      .about-introduction-profile img {
+        width: 200px;
+        border: 0;
+        margin: 0; }
+    .about-introduction-bio {
+      margin: 40px; }
+      .about-introduction-bio h1 {
+        margin-bottom: 10px;
+        font-size: 28px; }
+      .about-introduction-bio p {
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 20px; }
+  .about-featured {
+    padding: 100px 0;
+    text-align: center; }
+    .about-featured-header #featured-text {
+      font-size: 24px;
+      margin-bottom: 40px; }
+    .about-featured-logos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      flex-wrap: wrap;
+      margin: 20px; }
+      .about-featured-logos img {
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+        margin: 10px;
+        height: 35px; }
+      .about-featured-logos #realm {
+        height: 32px; }
+      .about-featured-logos #udemy {
+        height: 25px; }
+      .about-featured-logos #medium {
+        height: 34px; }
+      .about-featured-logos #sitepoint {
+        height: 28px; }
+  .about-recommendation {
+    background-color: #F9F9F9;
+    padding-top: 100px; }
+    .about-recommendation #recommendation-text {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 15px; }
+    .about-recommendation #recommendation-subtext {
+      text-align: center;
+      font-size: 16px; }
+    .about-recommendation-container-individual {
+      background-color: white;
+      margin: 30px 26px 0px 26px;
+      padding: 25px;
+      border: 1px solid #E6E6E6; }
+      .about-recommendation-container-individual-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 10px; }
+        .about-recommendation-container-individual-header-profile img {
+          width: 40px;
+          border-radius: 50%;
+          margin-right: 10px; }
+        .about-recommendation-container-individual-header-description {
+          font-size: 13px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          margin: 0; }
+          .about-recommendation-container-individual-header-description #name {
+            margin-top: 2px; }
+            .about-recommendation-container-individual-header-description #name a {
+              text-decoration: none;
+              font-weight: 600;
+              color: #454545; }
+          .about-recommendation-container-individual-header-description #title {
+            font-size: 12px;
+            margin-top: 2px;
+            line-height: 15px; }
+            .about-recommendation-container-individual-header-description #title a {
+              text-decoration: none;
+              font-weight: 600;
+              color: #454545; }
+      .about-recommendation-container-individual-content p {
+        font-size: 13px;
+        line-height: 25px; }
+  .about-speaking {
+    background-color: #F9F9F9; }
+    .about-speaking-header {
+      padding-top: 200px;
+      padding-bottom: 30px; }
+      .about-speaking-header #speaking-text {
+        font-size: 24px;
+        margin-bottom: 15px;
+        text-align: center; }
+      .about-speaking-header #speaking-subtext {
+        font-size: 16px;
+        text-align: center; }
+    .about-speaking-container-individual {
+      background-color: white;
+      margin: 10px 10px 0 10px;
+      padding: 50px 40px;
+      border: 1px solid #E6E6E6; }
+      .about-speaking-container-individual-logo {
+        height: 50px; }
+        .about-speaking-container-individual-logo img {
+          height: 50px; }
+        .about-speaking-container-individual-logo #swift-korea {
+          height: 40px; }
+      .about-speaking-container-individual-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px; }
+        .about-speaking-container-individual-description #title {
+          font-size: 22px;
+          margin-bottom: 5px;
+          font-weight: 600; }
+        .about-speaking-container-individual-description #subtitle {
+          font-size: 18px;
+          margin-bottom: 10px;
+          font-weight: 600; }
+        .about-speaking-container-individual-description #date {
+          font-size: 16px;
+          color: #787878; }
+      .about-speaking-container-individual-summary p {
+        font-size: 14px;
+        line-height: 30px; }
+  .about-profile {
+    background-color: #F9F9F9;
+    padding-top: 40px; }
+    .about-profile-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      width: 100%; }
+      .about-profile-container img {
+        width: 50%;
+        margin-right: 10px; }
+  .about-footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center; }
+    .about-footer span {
+      font-size: 12px; }
+      .about-footer span a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #454545; }
+      .about-footer span a:hover {
+        cursor: pointer; }
+
+@media screen and (min-width: 720px) {
+  .about-introduction-profile {
+    margin-top: 200px; }
+    .about-introduction-profile img {
+      width: 230px; }
+  .about-introduction-bio {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px; }
+    .about-introduction-bio p {
+      font-size: 15px;
+      line-height: 32px; }
+  .about-featured {
+    padding: 200px 0; }
+    .about-featured-header #featured-text {
+      font-size: 28px; }
+    .about-featured-logos {
+      padding: 0 20px; }
+      .about-featured-logos img {
+        margin: 20px;
+        height: 45px; }
+      .about-featured-logos #realm {
+        height: 42px; }
+      .about-featured-logos #sitepoint {
+        height: 36px; }
+      .about-featured-logos #udemy {
+        height: 32px; }
+      .about-featured-logos #medium {
+        height: 42px; }
+  .about-recommendation #recommendation-text {
+    font-size: 28px; }
+  .about-recommendation #recommendation-subtext {
+    font-size: 18px; }
+  .about-recommendation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 0 40px; }
+    .about-recommendation-container-individual {
+      max-width: 260px;
+      margin: 15px; }
+  .about-speaking-header {
+    padding-bottom: 50px; }
+  .about-speaking-container {
+    padding-bottom: 50px; }
+    .about-speaking-container-individual {
+      margin: 0 auto;
+      max-width: 600px;
+      margin-top: 50px; }
+      .about-speaking-container-individual-logo {
+        margin-bottom: 30px; }
+        .about-speaking-container-individual-logo img {
+          height: 60px; }
+      .about-speaking-container-individual-description #title {
+        font-size: 22px;
+        margin-bottom: 10px; }
+      .about-speaking-container-individual-description #subtitle {
+        font-size: 18px; }
+      .about-speaking-container-individual-description #date {
+        font-size: 16px; }
+      .about-speaking-container-individual-summary p {
+        font-size: 14px;
+        line-height: 32px; }
+  .about-profile-container {
+    max-width: 1500px;
+    margin: 0 auto; }
+    .about-profile-container img {
+      margin-right: 5%;
+      max-width: 350px; }
+  .about-footer span {
+    font-size: 14px; }
+    .about-footer span a:hover {
+      cursor: pointer; } }
+
+/*# sourceMappingURL=about.css.map */

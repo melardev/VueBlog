@@ -1,0 +1,210 @@
+$font-size-about-header-large-text: 28px;
+$font-size-about-header-large-subtext: 18px;
+$margin-about-header-large-text-bottom: 100px;
+
+@mixin about-media {
+  .about {
+
+    &-introduction {
+
+      &-profile {
+        margin-top: 200px;
+
+        img {
+          width: 230px;
+        }
+
+      }
+
+      &-bio {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 20px;
+
+        h1 {
+
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 32px;
+        }
+
+
+      }
+
+    }
+
+
+
+
+
+    &-featured {
+      padding: 200px 0;
+
+      &-header {
+
+        #featured-text {
+          font-size:$font-size-about-header-large-text;
+        }
+
+      }
+
+      &-logos {
+        padding: 0 20px;
+
+        img {
+          margin: 20px;
+          height: 45px;
+        }
+
+        #realm {
+          height: 42px;
+
+        }
+
+        #sitepoint {
+          height: 36px;
+        }
+
+        #udemy {
+          height: 32px;
+        }
+
+        #medium {
+          height: 42px;
+        }
+
+      }
+
+    }
+
+
+
+    &-recommendation {
+      #recommendation-text {
+        font-size:$font-size-about-header-large-text;
+
+      }
+
+      #recommendation-subtext {
+        font-size:$font-size-about-header-large-subtext;
+
+      }
+
+      &-container {
+        @include flex-container(row, center, flex-start);
+        flex-wrap: wrap;
+        padding: 0 40px;
+
+        &-individual {
+          max-width: 260px;
+          margin: 15px;
+        }
+
+      }
+
+    }
+
+
+
+    &-speaking {
+
+      &-header {
+        padding-bottom: 50px;
+      }
+
+      &-container {
+        padding-bottom: 50px;
+
+        &-individual {
+          margin: 0 auto;
+          max-width: 600px;
+          margin-top: 50px;
+          &-logo {
+            margin-bottom: 30px;
+
+            img {
+              height: 60px;
+            }
+
+
+          }
+
+          &-description {
+
+            #title {
+              font-size: 22px;
+              margin-bottom: 10px;
+            }
+
+            #subtitle {
+              font-size: 18px;
+            }
+
+            #date {
+              font-size: 16px;
+            }
+
+          }
+
+          &-summary {
+
+            p {
+              font-size: 14px;
+              line-height: 32px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &-profile {
+
+      &-container {
+        max-width: 1500px;
+        margin: 0 auto;
+
+        img {
+          margin-right: 5%;
+          max-width: 350px;
+
+        }
+
+      }
+
+    }
+
+
+
+
+
+
+
+
+
+    &-footer {
+
+      span {
+        font-size: 14px;
+
+        a {
+
+        }
+
+        a:hover {
+          cursor: pointer;
+        }
+
+      }
+
+    }
+
+  }
+
+}

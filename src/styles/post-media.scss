@@ -1,0 +1,103 @@
+@import './main.scss';
+@import './components/box.scss';
+@import './components/button';
+@import './components/container';
+
+
+@mixin post-media {
+  .post {
+    background-color: $color-background;
+
+    &-header {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 80px;
+      margin-bottom: 25px;
+
+      &-profile {
+
+        img {
+
+        }
+
+      }
+
+      &-author {
+        #author-name {
+          font-size: 14px;
+        }
+        #author-bio, #post-description {
+          font-size: 13px;
+        }
+
+      }
+
+
+
+    }
+
+
+
+
+
+    &-description {
+
+      &-title, &-subtitle {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+    }
+
+
+
+    &-content {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 25px 50px;
+    }
+
+
+
+    &-tags {
+
+      ul {
+
+        li {
+
+        }
+
+      }
+
+      &-divider {
+
+      }
+
+
+
+    }
+
+    &-share {
+      background-color: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 50px 50px 70px 50px;
+    }
+
+    &-divider {
+      height: 0;
+      margin-bottom: 20px;
+    }
+
+
+    &-comment {
+      background-color: white;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 50px;
+    }
+
+  }
+
+}

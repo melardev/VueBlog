@@ -1,0 +1,43 @@
+@mixin home-media {
+
+  .home {
+    margin: 0 auto;
+    max-width: 1410px;
+
+    &-action {
+      h1 {
+        font-size: 24px;
+
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+    }
+
+    &-blog {
+
+
+      &-header {
+
+      }
+
+      &-container {
+        @include flex-container(row, center, flex-start);
+        flex-wrap: wrap;
+
+
+        &-individual {
+          max-width: 320px;
+          margin: 10px;
+          margin-bottom: 100px;
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,102 @@
+@import './main.scss';
+@import './components/box.scss';
+@import './components/container';
+@import './nav-media';
+
+nav {
+  margin-top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 1px 4px rgba(0,0,0,0.23);
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+
+  .topNav {
+    display: none;
+  }
+
+  .logo-container {
+    @include flex-container(row, center, center);
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+
+    #logo {
+      margin: 0;
+
+      img {
+        width: 120px;
+        margin: 11px 0 0 0;
+        opacity: 0.8
+      }
+
+      img:hover {
+        opacity: 1.0;
+      }
+
+    }
+
+  }
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.16), 0 1px 4px rgba(0,0,0,0.23);
+}
+
+.sidenav a {
+  padding: 17px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #454545;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  width: 100%;
+  color: lightgrey;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 2;
+
+  #first, #second, #third {
+    width: 27px;
+    border-radius: 2px;
+    height: 4px;
+    margin: 4px;
+    background-color: #454545;
+  }
+
+  #first:hover, #second:hover, #third:hover {
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  @include nav-media;
+}

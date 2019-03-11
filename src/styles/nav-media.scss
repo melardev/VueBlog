@@ -1,0 +1,37 @@
+@mixin nav-media {
+  nav {
+
+    .hamburger {
+      display: none;
+    }
+
+    .topNav {
+      display: block;
+    }
+
+    .logo-container {
+      position: relative;
+      margin-left: 20px;
+      width: 120px;
+    }
+
+    .topNav {
+      @include flex-container(row, center, center);
+      margin-right: 10px;
+
+      a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #454545;
+        font-size: 12px;
+      }
+
+      a:hover {
+        color: black;
+      }
+      
+    }
+
+  }
+
+}
