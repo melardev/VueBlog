@@ -1,4 +1,4 @@
-# Vue log
+# Vue Blog
 # Table of Contents
 - [Introduction](#introduction)
 - [Full-stack Applications](#full-stack-applications)
@@ -67,6 +67,11 @@ This client side E-commerce application is also implemented using other client s
 ## Blog/CMS
 ### Server side implementations
 ### Client side
+- [Vue + Vuex](https://github.com/melardev/VueVuexBlog)
+- [Vue](https://github.com/melardev/VueBlog)
+- [React + Redux](https://github.com/melardev/ReactReduxBlog)
+- [React](https://github.com/melardev/ReactBlog)
+- [Angular](https://github.com/melardev/AngularBlog)
 #### The next come are
 - Angular NgRx-Store
 - Angular + Material

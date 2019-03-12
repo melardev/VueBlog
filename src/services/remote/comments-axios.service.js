@@ -3,11 +3,6 @@ import {createPromiseWrapperWithCallback} from "@/utils/promise.utils";
 
 export const CommentsAxiosService = {
     get(slug) {
-        if (typeof slug !== "string") {
-            throw new Error(
-                "[RWV] CommentsAxiosService.get() article slug required to fetch comments"
-            );
-        }
         return AxiosService.get("articles", `${slug}/comments`);
     },
 

@@ -47,6 +47,7 @@ const subscribe = (observer, receiveFirstState = true) => {
         observers.push(observer);
         if (receiveFirstState) {
             const user = JSON.parse(LocalStorageService.get(USER_KEY)) || {};
+            addUserExtrafields(user);
             observer(user);
         }
     }

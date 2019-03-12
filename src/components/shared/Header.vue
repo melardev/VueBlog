@@ -23,9 +23,6 @@
                         <router-link class="nav-link" to="/profile">Profile</router-link>
                     </li>
                     <li v-if="isLoggedIn">
-                        <router-link class="nav-link" to="/profile">Profile</router-link>
-                    </li>
-                    <li v-if="isLoggedIn">
                         <router-link class="nav-link" to="/logout">Logout</router-link>
                     </li>
                     <li v-else class="nav-item">
