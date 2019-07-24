@@ -26,4 +26,7 @@ export const ArticleAxiosService = {
         return createPromiseWrapper(AxiosService.get(`/articles/${slug}`), 'Article fetched!');
     },
 
+    create(article) {
+        return createPromiseWrapper(AxiosService.post(`/articles`, article), 'Article created successfully');
+    }
 };

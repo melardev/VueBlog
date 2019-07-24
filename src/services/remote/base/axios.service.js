@@ -1,4 +1,5 @@
 import axios from "axios";
+import {UsersService} from "@/services/local/users.service";
 
 let cachedUser = {};
 export const setUser = (user) => {
@@ -12,16 +13,24 @@ const axiosInstance = axios.create({
     responseEncoding: 'utf8'
 });
 
-axiosInstance.interceptors.request.use((config) => {
+axiosInstance.interceptors.request.use((request) => {
 
     if (cachedUser.username)
-        config.headers.authorization = "Bearer " + cachedUser.token;
+        request.headers.authorization = "Bearer " + cachedUser.token;
 
-    return config;
+    return request;
 }, function (error) {
+    debugger;
     return Promise.reject(error);
 });
 
+axiosInstance.interceptors.response.use((response) => {
+    return response;
+}, function (error) {
+    if (error.response.status === 401 || error.response.status === 403) {
+        UsersService.logout();
+    }
+});
 
 function fetchPage(path, query = {page: 1, page_size: 12}) {
     return axiosInstance.get(`${path}?page=${query.page}&page_size=${query.page_size}`)
@@ -31,8 +40,11 @@ function get(path) {
     return axiosInstance.get(path)
 }
 
-function post(path, data) {
-    return axiosInstance.post(path, data);
+function post(path, data, headers = null) {
+    if (headers == null)
+        return axiosInstance.post(path, data);
+    else
+        return axiosInstance.post(path, data, headers);
 }
 
 function put(path) {

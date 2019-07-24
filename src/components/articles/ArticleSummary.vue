@@ -1,9 +1,11 @@
 <template>
     <div class="card mb-4">
-        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap"/>
+        <img class="card-img-top"
+             :src="article.images && article.images.length > 0 ? article.images[0] :'http://placehold.it/750x300'"
+             alt="Card image cap"/>
         <div class="card-body">
             <h2 class="card-title">{{this.article.title}}</h2>
-            <p class="card-text">{{this.article.description}}</p>
+            <p class="card-text" v-html="this.article.description"></p>
             <router-link v-bind:to="`/articles/${this.article.slug}`" class="btn btn-primary">
                 <div :click="articleSelected">Read More &rarr;</div>
             </router-link>

@@ -21,6 +21,13 @@ export const router = new Router({
             redirect: '/articles'
         },
         {
+            path: '/articles/new',
+            exact: true,
+            name: 'article-new',
+            props: true,
+            component: ArticleCreateOrEdit,
+        },
+        {
             path: '/articles/:slug',
             exact: true,
             name: 'article-details',

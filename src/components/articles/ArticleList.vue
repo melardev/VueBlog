@@ -77,7 +77,23 @@
                 return ArticleAxiosService.fetchAll(query).then(result => {
                     if (result.success) {
                         this.pageMeta = result.page_meta;
-                        this.articles = result.articles;
+                        // Add https://localhost:8080
+                        // if (webpackHotUpdate) {
+                        if (process.env.NODE_ENV === 'development') {
+                            this.articles = result.articles.map(a => {
+                                if (a.images && a.images.length > 0) {
+                                    a.images = a.images.map(image => {
+                                        if (!image.startsWith('http:'))
+                                            return 'http://localhost:8080' + image;
+                                        else
+                                            return image;
+                                    });
+                                }
+                                return a;
+                            });
+                        } else {
+                            this.articles = result.articles;
+                        }
                     }
                 }).catch(err => {
                     debugger;

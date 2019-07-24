@@ -61,6 +61,7 @@ const unsubscribe = (observer) => {
 
 const logout = () => {
     return new Promise((resolve, reject) => {
+        debugger;
         LocalStorageService.clear(USER_KEY);
         notifyObservers({});
         resolve({success: true});
